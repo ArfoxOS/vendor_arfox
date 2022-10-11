@@ -34,6 +34,10 @@ PRODUCT_SYSTEM_PROPERTIES += \
     ro.custom.blur.enable=true
 endif
 
+# Extra packages
+PRODUCT_PACKAGES += \
+    BatteryStatsViewer
+
 # Face Unlock
 TARGET_FACE_UNLOCK_SUPPORTED ?= $(TARGET_SUPPORTS_64_BIT_APPS)
 ifeq ($(TARGET_FACE_UNLOCK_SUPPORTED),true)
