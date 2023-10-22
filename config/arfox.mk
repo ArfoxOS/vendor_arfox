@@ -2,6 +2,17 @@
 PRODUCT_PACKAGES += \
     BtHelper
 
+# Clocks (SystemUI)
+PRODUCT_PACKAGES += \
+    SystemUIClocks-BigNum \
+    SystemUIClocks-Calligraphy \
+    SystemUIClocks-Flex \
+    SystemUIClocks-Growth \
+    SystemUIClocks-Inflate \
+    SystemUIClocks-Metro \
+    SystemUIClocks-NumOverlap \
+    SystemUIClocks-Weather
+
 # Cloned app exemption
 PRODUCT_COPY_FILES += \
     vendor/arfox/prebuilt/common/etc/sysconfig/preinstalled-packages-platform-arfox-product.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/preinstalled-packages-platform-arfox-product.xml
