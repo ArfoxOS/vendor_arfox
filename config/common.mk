@@ -231,6 +231,8 @@ CUSTOM_LOCALES += \
     cy_GB \
     fur_IT
 
+include vendor/arfox/config/arfox.mk
+
 include vendor/arfox/config/version.mk
 
 -include vendor/arfox-priv/keys/keys.mk
