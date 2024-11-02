@@ -228,6 +228,7 @@ PRODUCT_PACKAGE_OVERLAYS += \
     vendor/arfox/overlay/no-rro
 
 PRODUCT_PACKAGES += \
+    AndroidBlackThemeOverlay \
     DocumentsUIOverlay \
     NetworkStackOverlay \
     PermissionControllerOverlay
