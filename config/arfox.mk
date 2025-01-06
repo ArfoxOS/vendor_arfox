@@ -2,6 +2,12 @@
 PRODUCT_COPY_FILES += \
     vendor/arfox/prebuilt/common/etc/sysconfig/preinstalled-packages-platform-arfox-product.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/preinstalled-packages-platform-arfox-product.xml
 
+# ColumbusService
+ifeq ($(TARGET_SUPPORTS_QUICK_TAP),true)
+PRODUCT_PACKAGES += \
+    ColumbusService
+endif
+
 # DeviceAsWebcam
 ifeq ($(TARGET_BUILD_DEVICE_AS_WEBCAM), true)
     PRODUCT_PACKAGES += \
