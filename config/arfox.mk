@@ -31,3 +31,6 @@ endif
 
 # Fonts
 include vendor/arfox/fonts/fonts.mk
+
+# Themed icons for Pixel Launcher
+$(call inherit-product, vendor/google/overlays/ThemeIcons/config.mk)
