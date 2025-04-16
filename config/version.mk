@@ -16,6 +16,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.arfox.version=$(ARFOX_VERSION) \
     ro.arfox.display.version=$(ARFOX_DISPLAY_VERSION) \
     ro.arfox.releasetype=$(ARFOX_BUILD_TYPE) \
+    ro.arfox.maintainer=$(ARFOX_MAINTAINER)
 
 # Only include Updater for official  build
 ifeq ($(filter-out OFFICIAL,$(ARFOX_BUILD_TYPE)),)
