@@ -48,5 +48,9 @@ endif
 # Fonts
 include vendor/arfox/fonts/fonts.mk
 
+# GameSpace
+PRODUCT_PACKAGES += \
+    GameSpace
+
 # Themed icons for Pixel Launcher
 $(call inherit-product, vendor/google/overlays/ThemeIcons/config.mk)
