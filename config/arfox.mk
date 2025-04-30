@@ -72,3 +72,6 @@ $(call inherit-product, vendor/google/overlays/ThemeIcons/config.mk)
 
 # Themed Overlays
 $(call inherit-product, vendor/arfox/themes/themes.mk)
+
+# Bootanimation
+$(call inherit-product, vendor/arfox/bootanimation/bootanimation.mk)
