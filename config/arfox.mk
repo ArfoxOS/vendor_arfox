@@ -69,3 +69,6 @@ PRODUCT_PACKAGES += \
 
 # Themed icons for Pixel Launcher
 $(call inherit-product, vendor/google/overlays/ThemeIcons/config.mk)
+
+# Themed Overlays
+$(call inherit-product, vendor/arfox/themes/themes.mk)
