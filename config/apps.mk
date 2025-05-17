@@ -1,21 +1,18 @@
 # Basic
+ifeq ($(VANILLA),true)
+    include vendor/flavour/vanilla/vanilla.mk
+else
+    include vendor/flavour/gms/arm64/arm64-vendor.mk
+endif
+
 PRODUCT_PACKAGES += \
-    Contacts \
-    Dialer \
-    DeskClock \
-    Etar \
-    ExactCalculator \
-    Glimpse \
-    Jelly \
-    Recorder \
-    Seedvault \
-    messaging \
-    LatinIME \
     SettingsIntelligence \
+    Seedvault \
     SetupWizard \
     ThemePicker \
     WallpaperPicker2 \
-    Launcher3QuickStep
+    Launcher3QuickStep \
+    Glimpse
 
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     Launcher3QuickStep
