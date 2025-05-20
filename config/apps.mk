@@ -1,9 +1,7 @@
-# Basic
-ifeq ($(VANILLA),true)
-    include vendor/flavour/vanilla/vanilla.mk
-else
-    include vendor/flavour/gms/arm64/arm64-vendor.mk
-endif
+# Flavour
+
+include vendor/flavour/gms/arm64/arm64-vendor.mk
+include vendor/flavour/vanilla/vanilla.mk
 
 PRODUCT_PACKAGES += \
     SettingsIntelligence \
